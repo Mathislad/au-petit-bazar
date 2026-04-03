@@ -29,8 +29,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName: "Au petit baz'AR",
+    url: "https://au-petit-bazar.vercel.app",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Au petit baz'AR — Saint-Front, Haute-Loire",
+    description: "Votre commerce de village : épicerie, terroir, pain, tabac, terrasse. Au coeur de Saint-Front.",
   },
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: "https://au-petit-bazar.vercel.app",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

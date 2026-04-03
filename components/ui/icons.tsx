@@ -1,7 +1,9 @@
 // Ensemble d'icônes SVG inline — Au petit baz'AR
+import type { CSSProperties } from "react";
 
 interface IconProps {
   className?: string;
+  style?: CSSProperties;
 }
 
 export function IconPhone({ className }: IconProps) {

@@ -8,6 +8,7 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
   display: "swap",
   weight: ["400", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 const lato = Lato({
@@ -21,11 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://au-petit-bazar.vercel.app"),
   title: "Au petit baz'AR — Commerce de village · Saint-Front, Haute-Loire",
   description:
-    "Épicerie, produits du terroir, pain frais, tabac, presse, FDJ et terrasse au coeur de Saint-Front (Haute-Loire). Ouvert du mardi au dimanche.",
+    "Pain frais, épicerie, produits du terroir, fromages, tabac, presse, FDJ et terrasse à Saint-Front (Haute-Loire). Ouvert du mardi au dimanche dès 8 h.",
   openGraph: {
-    title: "Au petit baz'AR — Saint-Front, Haute-Loire",
+    title: "Au petit baz'AR — Le commerce de Saint-Front",
     description:
-      "Votre commerce de village : épicerie, terroir, pain, tabac, terrasse. Au coeur de Saint-Front.",
+      "Pain, épicerie, terroir, café et terrasse au cœur du village. Un vrai commerce de proximité, ouvert du mardi au dimanche.",
     type: "website",
     locale: "fr_FR",
     siteName: "Au petit baz'AR",
@@ -34,12 +35,20 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Au petit baz'AR — Saint-Front, Haute-Loire",
-    description: "Votre commerce de village : épicerie, terroir, pain, tabac, terrasse. Au coeur de Saint-Front.",
+    description: "Pain, épicerie, terroir, café et terrasse. Le commerce de village de Saint-Front.",
   },
   robots: { index: true, follow: true },
   alternates: {
     canonical: "https://au-petit-bazar.vercel.app",
   },
+  keywords: [
+    "commerce village saint-front",
+    "épicerie haute-loire",
+    "pain frais saint-front",
+    "produits locaux auvergne",
+    "tabac presse fdj saint-front",
+    "au petit bazar",
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
